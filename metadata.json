@@ -1,0 +1,6 @@
+{
+  "name": "RUET PrepPilot",
+  "description": "AI-powered exam preparation planner and Socratic tutor for RUET engineering students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
