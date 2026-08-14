@@ -1,119 +1,276 @@
-# RUET PrepPilot
+# 🎓 RUET PrepPilot
 
-**Your AI-powered exam preparation co-pilot for RUET students.**
+### Your AI-powered exam preparation co-pilot for RUET students.
 
-RUET PrepPilot is an AI-powered academic preparation assistant designed to help RUET students decide **what to study first, what to focus on, and how to prepare efficiently for exams**.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-RUET%20PrepPilot-blue)](https://ruet-preppilot.ai.studio)
+[![Built with Gemini](https://img.shields.io/badge/AI-Google%20Gemini-orange)](https://ai.google.dev/)
 
-## 🚀 Problem
+**RUET PrepPilot** is an AI-powered exam preparation assistant that helps RUET students decide **what to study first, why it matters, and what to study next**.
 
-RUET students often rely on lecture materials, notes, course resources, and previous exam questions from different sources.
+## 🚀 Live Demo
 
-Before exams, the challenge is not only finding resources — it is knowing:
+👉 https://ruet-preppilot.ai.studio
 
-* Which topics are most important?
-* Which topics should be studied first?
-* How much time should be spent on each topic?
-* What topics are relevant to previous RUET exams?
-* Where should a student go for help when they get stuck?
+## 💡 The Problem
 
-## 💡 Solution
+RUET students often prepare for semester exams using lecture materials, notes, course resources, and previous exam questions from different sources.
 
-RUET PrepPilot brings these preparation tasks into one AI-powered workspace.
+The problem is not simply finding resources.
 
-Students can provide their academic context and learning resources, and the system uses **Google Gemini** to analyze the context and generate personalized study priorities and daily preparation roadmaps.
+The real question is:
 
-Students can then move directly from planning into an interactive **AI Tutor**.
+> **"I have so much to study. What should I study first?"**
 
-### Core Workflow
+Students need to understand which topics are most important based on their weaknesses, previous exam patterns, marks, and the limited time remaining before an exam.
 
-**Academic Resources → Gemini Analysis → Topic Priorities → Daily Roadmap → AI Tutoring**
+## 💡 Our Solution
+
+RUET PrepPilot turns scattered academic resources into a personalized, exam-focused preparation strategy.
+
+The core workflow is:
+
+**Student Weaknesses → Exam Evidence → AI Prioritization → Daily Roadmap → AI Tutoring**
+
+Students provide their course and exam context. The Gemini API analyzes that context and helps prioritize topics based on exam relevance, previous RUET questions, estimated marks, and student weaknesses.
+
+The result is an actionable study plan instead of a generic list of topics.
+
+## ⭐ What Makes RUET PrepPilot Different?
+
+RUET PrepPilot is **not just another AI chatbot or generic study planner**.
+
+Our key differentiator is **exam-aware personalization**.
+
+Instead of simply saying:
+
+> "This topic is important."
+
+PrepPilot can show:
+
+* 🔥 Priority level
+* 📊 Estimated marks
+* 📝 RUET past-exam references
+* 🎯 Student weakness relevance
+* 📅 Recommended study roadmap
+
+For example, a topic can become an **Urgent** priority because it has appeared in RUET past exams and carries significant marks.
+
+This allows students to understand not only:
+
+> **What should I study?**
+
+but also:
+
+> **Why should I study it first?**
 
 ## ✨ Features
 
-* 🤖 AI-powered personalized study planning
-* 📚 Course material analysis
-* 🔥 Topic prioritization
-* 🚨 Urgent / High / Medium / Low priority levels
-* 📝 RUET past-exam question references
-* 📅 Personalized daily study roadmap
-* 🎓 AI-powered tutoring
-* 💬 Interactive learning assistance
-* 📊 Academic preparation dashboard
+### 📊 Personalized Dashboard
 
-## 🧠 Gemini Usage
+A central workspace for the student's exam preparation.
 
-Google Gemini is the core intelligence behind RUET PrepPilot.
+### 📚 Academic Materials
 
-Gemini is used to analyze the student's academic context and learning resources, identify important topics, prioritize preparation areas, generate study recommendations, and power the interactive AI Tutor.
+Students can provide course information, exam context, weak topics, and relevant resources.
 
-This allows RUET PrepPilot to provide a preparation strategy that adapts to the student's specific academic context instead of functioning as a generic learning management system.
+### 🤖 Gemini-Powered Study Plan
 
-## 🏗️ Built With
+The Gemini API analyzes the academic context and generates personalized topic priorities.
+
+### 🔥 Exam-Aware Prioritization
+
+Topics are categorized into:
+
+* 🚨 Urgent
+* 🔴 High
+* 🟡 Medium
+* 🟢 Low
+
+Priorities can include estimated marks and RUET past-exam references.
+
+### 📅 Daily Roadmap
+
+The prioritized topics are converted into an actionable daily study roadmap based on the student's preparation timeline.
+
+### 🧑‍🏫 Socratic AI Tutor
+
+Students can move directly from planning to learning.
+
+The AI Tutor uses a Socratic approach by asking questions, checking understanding, providing explanations, and guiding students step-by-step instead of simply giving the final answer.
+
+### 📝 Exam Practice
+
+The platform also supports exam-focused practice to help students prepare using the prioritized topics.
+
+## 🧠 How Gemini Is Used
+
+The **Gemini API** is the core intelligence behind RUET PrepPilot.
+
+Gemini is used to:
+
+* Analyze student weaknesses
+* Understand course and exam context
+* Analyze RUET past-exam information
+* Prioritize important topics
+* Generate personalized study recommendations
+* Generate daily study roadmaps
+* Power the Socratic AI Tutor
+* Support exam-focused learning
+
+Gemini is not used only as a chatbot. It connects the student's academic context and exam evidence to the decision of **what they should study next**.
+
+## 🏗️ Tech Stack
+
+### Frontend
 
 * React
 * TypeScript
 * Vite
+
+### Backend
+
 * Express
-* Google Gemini
+* Node.js
+
+### AI
+
+* Google Gemini API
 * Google AI Studio
+
+### Development
+
 * Antigravity
+* GitHub
 
-## 🎯 Impact
+## 🔄 User Flow
 
-RUET PrepPilot aims to help students spend less time organizing scattered academic resources and more time studying the topics that matter most.
+```text
+                    ┌──────────────────┐
+                    │  Student Context │
+                    │  Weak Topics     │
+                    │  Exam Timeline   │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │   Gemini API     │
+                    │    Analysis      │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │ Topic Priority   │
+                    │ Marks + Exams    │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │ Daily Roadmap    │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │  Socratic Tutor  │
+                    └──────────────────┘
+```
 
-Instead of asking:
+## 🏆 Hack Day Focus
 
-> "What should I study?"
+RUET PrepPilot was built during the Hack Day with a focus on creating a working AI-powered solution to a real student problem.
 
-students can use RUET PrepPilot to understand:
+Rather than building a large LMS, we focused on one specific problem:
 
-> **"What should I study next?"**
+> **Helping students decide what to study next.**
 
-## 🖥️ Project Structure
+## 📸 Screenshots
 
-The project is organized as a modern web application using a React + TypeScript frontend with an Express backend and Gemini-powered AI functionality.
+### Dashboard
+
+*Add screenshot here.*
+
+### Materials
+
+*Add screenshot here.*
+
+### Personalized Study Plan
+
+*Add screenshot here.*
+
+### Socratic AI Tutor
+
+*Add screenshot here.*
+
+## 🎥 Demo
+
+A short demo video demonstrates the complete workflow:
+
+**Problem → Dashboard → Materials → Study Plan → AI Prioritization → Daily Roadmap → Socratic AI Tutor**
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Make sure you have:
-
 * Node.js
 * npm
-* A Google Gemini API key
+* Gemini API key
 
-### Installation
-
-Clone the repository:
+### Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd YOUR_PROJECT_FOLDER
+git clone https://github.com/Codedbyriyad/RUET-PrepPilot.git
+cd RUET-PrepPilot
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Configure your Gemini API key using the environment configuration required by the project.
+### Environment Variables
 
-Start the development server:
+Create a `.env` file and add your Gemini API key according to the project's environment configuration.
+
+**Never commit your API key to GitHub.**
+
+### Run the project
 
 ```bash
 npm run dev
 ```
 
-## 🏆 Hackathon MVP
+## 🔮 What's Next?
 
-RUET PrepPilot was developed as an AI-powered hackathon project focused on solving a practical problem faced by university students: **turning scattered academic resources into an actionable, personalized exam preparation strategy.**
+Future versions of RUET PrepPilot could include:
 
+* More advanced course-material ingestion
+* Automated historical exam analysis
+* Student performance tracking
+* Adaptive revision schedules
+* Personalized progress analytics
+* Improved exam prediction and topic prioritization
+* Deeper integration with RUET course structures
+
+## 🎯 Our Vision
+
+We don't want students to simply ask:
+
+> **"What should I study?"**
+
+We want RUET PrepPilot to help them understand:
+
+> **"What should I study next — and why?"**
+
+---
 
 ## 👨‍💻 Project
 
 **RUET PrepPilot**
 
-Built with ❤️ using Google Gemini, Google AI Studio, React, TypeScript, Express, and Vite.
+Built with ❤️ using **Google Gemini API, React, TypeScript, Express, Google AI Studio, and Antigravity**.
+
+**Live Demo:**
+https://ruet-preppilot.ai.studio
+
+**GitHub:**
+https://github.com/Codedbyriyad/RUET-PrepPilot
